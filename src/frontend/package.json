@@ -1,0 +1,61 @@
+{
+  "name": "crewboss",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "/code/src/frontend/node_modules/@vue/cli-service/bin/vue-cli-service.js serve",
+    "build": "/code/src/frontend/node_modules/@vue/cli-service/bin/vue-cli-service.js build",
+    "lint": "/code/src/frontend/node_modules/@vue/cli-service/bin/vue-cli-service.js lint",
+    "watch": "/code/src/frontend/node_modules/@vue/cli-service/bin/vue-cli-service.js build --watch",
+    "watch_prod": "/code/src/frontend/node_modules/@vue/cli-service/bin/vue-cli-service.js build --watch --mode production"
+  },
+  "dependencies": {
+    "@deveodk/vue-toastr": "^1.0.4",
+    "axios": "^0.18.0",
+    "bootstrap3": "^3.3.5",
+    "browserslist": "^4.7.0",
+    "caniuse-lite": "^1.0.30000997",
+    "fullcalendar": "3.9.0",
+    "fullcalendar-scheduler": "^1.9.4",
+    "jquery": "^3.3.1",
+    "libphonenumber-js": "^1.4.2",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.26",
+    "print-js": "^1.0.61",
+    "register-service-worker": "^1.6.2",
+    "vee-validate": "^2.1.7",
+    "vue": "^2.5.16",
+    "vue-axios": "^2.1.2",
+    "vue-cookie": "^1.1.4",
+    "vue-full-calendar": "^2.7.0",
+    "vue-grid-layout": "^2.1.13",
+    "vue-js-modal": "^1.3.28",
+    "vue-multiselect": "^2.1.6",
+    "vue-rangedate-picker": "^0.3.4",
+    "vue-router": "^3.0.1",
+    "vue-select": "kevinmarceloph/vue-select",
+    "vue-toastr": "^2.0.14",
+    "vue2-dropzone": "^3.5.2",
+    "vue2-timepicker": "^0.1.4",
+    "vuejs-datepicker": "^1.5.2",
+    "vuex": "^3.0.1",
+    "vuex-persist": "^1.4.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-rc.5",
+    "@vue/cli-plugin-eslint": "^3.0.0-rc.5",
+    "@vue/cli-plugin-pwa": "^3.10.0",
+    "@vue/cli-service": "^3.0.0-rc.5",
+    "@vue/eslint-config-prettier": "^3.0.0-rc.5",
+    "eslint-plugin-prettier": "^3.1.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

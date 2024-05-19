@@ -1,0 +1,9 @@
+FROM node:9.2.0
+RUN mkdir /code
+WORKDIR /code
+ADD . /code/
+WORKDIR /code/src/frontend
+RUN rm -f package-lock.json
+RUN rm -rf node_modules
+RUN npm rebuild node-sass --force
+WORKDIR /code

@@ -1,0 +1,51 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td style="padding: 10px 0 30px 0;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600"
+                    style="border: 1px solid #5499c7; border-collapse: collapse;">
+                    <tr>
+                        <td align="center" bgcolor="#5499c7"
+                            style="padding: 40px 0 30px 0; color: #153643; font-size: 28px; font-weight: bold; font-family: Arial, sans-serif;">
+                            <img src="https://crewboss.app/dist/assets/images/header-logo.png" alt="CrewBoss"
+                                width="502" height="113.406" style="display: block;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#ffffff" style="padding: 20px 30px 20px 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td style="color: #333; font-family: Arial, sans-serif; font-size: 24px;">
+                                        <b>Greetings from CrewBoss,</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #333; font-family: Arial, sans-serif; font-size: 18px; padding-top: 10px;">
+                                        Someone is trying to log in to your account from {{token.user.login_attempts.first.ip_address}} ({{token.user.login_attempts.first.location}}).<br>
+                                        Your account has been locked for one hour to prevent further attempts.<br>
+                                        No one will be able to log in to your account in this period, but you can secure your account by changing your password.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #333; font-family: Arial, sans-serif; font-size: 24px; padding-top: 20px;">
+                                        <b>Click <a style="color: #F8B60B!important;" href="{{ SITE_URL }}api/v1/reset-confirm/?token={{ token.token }}">here</a> to reset your password</b>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

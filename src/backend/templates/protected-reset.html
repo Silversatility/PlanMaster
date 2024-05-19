@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if success %}
+{% if done %}
+<article style="display:table; width:100%;">
+  <a href="/" style="display:table-cell;" class="btn btn-primary login-btn text-uppercase">Log in to CrewBoss</a>
+</article>
+{% else %}
+<article class="forgot-password-section">
+  <p>Please enter your new password here:</p>
+  <form method="POST">
+    {% csrf_token %}
+    <div>
+      <input type="password" required="required" class="login-input" name="password" placeholder="New password" />
+    </div>
+    <div>
+      <input type="password" required="required" class="login-input" name="password_confirm" placeholder="Confirm password" />
+    </div>
+    <button class="text-uppercase btn login-btn">Set Password</button>
+  </form>
+</article>
+{% endif %}
+{% endif %}
+{% endblock %}

@@ -1,0 +1,59 @@
+.dashboard {
+  .mobile-sub-header {
+    background: #e3e9f5;
+    margin-top: -30px;
+    margin-bottom: 5px;
+    padding: 14px 0;
+    display: block;
+
+    .select-title {
+      display: block;
+      font-size: 14px;
+    }
+
+    .mobile-filter-section {
+      margin-bottom: 26px;
+
+      .dates-select,
+      .lot-select {
+        width: 79px;
+        height: 35px;
+        background: #f0f5fb;
+        border: 1px solid #d3d9e5;
+        border-radius: 4px;
+      }
+
+      .arrows {
+        border-radius: 12px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        background: #fff;
+        border: 0;
+        color: #5599c8;
+      }
+    }
+
+    .mobile-title {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 17px;
+      text-align: center;
+    }
+
+    .add-task-btn-mobile {
+      width: 40px;
+      height: 40px;
+      background: #5599c8;
+      color: #fff;
+      padding: 2px 2px 2px 8px;
+      font-size: 14px;
+      border: 0;
+      float: right;
+      .fa {
+        margin-right: 6px;
+      }
+    }
+  }
+}

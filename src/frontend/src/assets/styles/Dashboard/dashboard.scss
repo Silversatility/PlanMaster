@@ -1,0 +1,196 @@
+@import "@/assets/styles/helpers.scss";
+
+.dashboard {
+  .divider-strip {
+    background: #5499C7;
+    width: 2px;
+    height: 40px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+  }
+  .date-wrapper {
+    max-width: 410px;
+    width: 36%;
+    min-width: 280px;
+    height: 61px;
+    margin-bottom: 23px;
+
+    .day {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #000;
+      opacity: 0.2;
+      display: block;
+      margin-bottom: 9px;
+    }
+
+    .date {
+      width: 40px;
+      height: 35px;
+      display: block;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 35px;
+      background: #f0f5fb;
+      border: 2px #d3d9e5 solid;
+    }
+
+    .active {
+      background: #b7d1e8;
+      border: 0;
+    }
+
+    .arrows {
+      color: #5599c8;
+      position: relative;
+      top: 13px;
+      font-size: 20px;
+    }
+  }
+
+  .add-task-btn,
+  .add-task-btn-mobile {
+    width: 144px;
+    height: 40px;
+    background: #5599c8;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+
+    .fa {
+      margin-right: 6px;
+    }
+  }
+
+  .title-section {
+    background: #e3e9f5;
+    height: 85px;
+
+    .title {
+      height: 85px;
+
+      .show-by {
+        .filter-btn {
+          width: 100px;
+          height: 35px;
+          border: 0;
+          background: #f0f5fb;
+        }
+
+        .active {
+          background: #b7d1e8;
+        }
+      }
+    }
+  }
+
+  .tasks {
+    position: relative;
+    margin-bottom: 100px;
+
+    .status {
+      font-size: 20px;
+      color: #000;
+      opacity: 0.7;
+      margin-bottom: 20px;
+    }
+  }
+  .mobile {
+    display: none;
+  }
+
+  .mobile-sub-header {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    .mobile {
+      display: inherit;
+    }
+
+    .mobile-sub-header {
+      display: block;
+    }
+    .cf-search,
+    .cf-search-div,
+    .date-wrapper,
+    .add-task-btn,
+    .title-section {
+      display: none !important;
+    }
+
+    .tasks {
+      padding-top: 0;
+
+      .tasks-wrapper {
+        max-height: 217px;
+        overflow-y: scroll;
+        padding-right: 5px;
+      }
+
+      .handleHeight {
+        max-height: 800px;
+      }
+
+      .status {
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
+      .show-more {
+        color: #5599c8;
+      }
+
+      .bottom-blur {
+        &:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background: rgba(240, 240, 240, 0.5);
+          height: 69px;
+          box-shadow: inset -8px -18px 20px 0px rgba(255, 255, 255, 1);
+        }
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-button {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #5599c8;
+        border: 0px none #5599c8;
+        border-radius: 100px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #5599ff;
+      }
+      ::-webkit-scrollbar-thumb:active {
+        background: #5599c8;
+      }
+      ::-webkit-scrollbar-track {
+        background: #e3e9f5;
+        border: 0px none #ffffff;
+        border-radius: 50px;
+      }
+      ::-webkit-scrollbar-track:hover {
+        background: #e3e9f5;
+      }
+      ::-webkit-scrollbar-track:active {
+        background: #e3e9f5;
+      }
+      ::-webkit-scrollbar-corner {
+        background: transparent;
+      }
+    }
+  }
+}

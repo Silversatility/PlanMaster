@@ -1,0 +1,2827 @@
+[
+    {
+        "model": "construction.company",
+        "fields": {
+            "name": "ABC Construction",
+            "type": 1
+        },
+        "extra": {
+            "set": "a"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "admin1@a.example.com",
+            "mobile_number": "(202) 555-0100",
+            "first_name": "Jill",
+            "last_name": "Smith",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "admin",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "admin1@a.example.com"
+            ],
+            "is_admin": true,
+            "is_builder": true
+        },
+        "extra": {
+            "type": "admin",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent1@a.example.com",
+            "mobile_number": "(202) 555-0101",
+            "first_name": "Eric",
+            "last_name": "Perez",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "superintendent1@a.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent2@a.example.com",
+            "mobile_number": "(202) 555-0102",
+            "first_name": "Brady",
+            "last_name": "Snyder",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "superintendent2@a.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent3@a.example.com",
+            "mobile_number": "(202) 555-0103",
+            "first_name": "Kyle",
+            "last_name": "Reed",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "superintendent3@a.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent4@a.example.com",
+            "mobile_number": "(202) 555-0104",
+            "first_name": "Rachael",
+            "last_name": "Wood",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "superintendent4@a.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent5@a.example.com",
+            "mobile_number": "(202) 555-0105",
+            "first_name": "Keith",
+            "last_name": "Rush",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "superintendent5@a.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder1@a.example.com",
+            "mobile_number": "(202) 555-0106",
+            "first_name": "Eric",
+            "last_name": "Gray",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "builder1@a.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder2@a.example.com",
+            "mobile_number": "(202) 555-0107",
+            "first_name": "Isabella",
+            "last_name": "Carney",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "builder2@a.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder3@a.example.com",
+            "mobile_number": "(202) 555-0108",
+            "first_name": "Nathaniel",
+            "last_name": "Friedman",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "builder3@a.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder4@a.example.com",
+            "mobile_number": "(202) 555-0109",
+            "first_name": "Yolanda",
+            "last_name": "Macdonald",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "builder4@a.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder5@a.example.com",
+            "mobile_number": "(202) 555-0110",
+            "first_name": "Beth",
+            "last_name": "Anderson",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "builder5@a.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "a"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor1@a.example.com",
+            "mobile_number": "(202) 555-0111",
+            "first_name": "Chris",
+            "last_name": "Mejia",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "a",
+            "subcontractor_name": "Chris Mejia Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "subcontractor1@a.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "a",
+            "subcontractor_name": "Chris Mejia Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor2@a.example.com",
+            "mobile_number": "(202) 555-0112",
+            "first_name": "Ann",
+            "last_name": "Rojas",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "a",
+            "subcontractor_name": "Ann Rojas Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "subcontractor2@a.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "a",
+            "subcontractor_name": "Ann Rojas Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor3@a.example.com",
+            "mobile_number": "(202) 555-0113",
+            "first_name": "James",
+            "last_name": "Palmer",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "a",
+            "subcontractor_name": "James Palmer Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "subcontractor3@a.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "a",
+            "subcontractor_name": "James Palmer Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor4@a.example.com",
+            "mobile_number": "(202) 555-0114",
+            "first_name": "Jennifer",
+            "last_name": "Barrera",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "a",
+            "subcontractor_name": "Jennifer Barrera Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "subcontractor4@a.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "a",
+            "subcontractor_name": "Jennifer Barrera Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor5@a.example.com",
+            "mobile_number": "(202) 555-0115",
+            "first_name": "Jeffery",
+            "last_name": "Sanders",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "a",
+            "subcontractor_name": "Jeffery Sanders Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "ABC Construction"
+            ],
+            "user": [
+                "subcontractor5@a.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "a",
+            "subcontractor_name": "Jeffery Sanders Services"
+        }
+    },
+    {
+        "model": "construction.company",
+        "fields": {
+            "name": "Beta Crew",
+            "type": 1
+        },
+        "extra": {
+            "set": "b"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "admin1@b.example.com",
+            "mobile_number": "(202) 555-0116",
+            "first_name": "Shane",
+            "last_name": "Jackson",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "admin",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "admin1@b.example.com"
+            ],
+            "is_admin": true,
+            "is_builder": true
+        },
+        "extra": {
+            "type": "admin",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent1@b.example.com",
+            "mobile_number": "(202) 555-0117",
+            "first_name": "April",
+            "last_name": "Frazier",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "superintendent1@b.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent2@b.example.com",
+            "mobile_number": "(202) 555-0118",
+            "first_name": "Nicholas",
+            "last_name": "Silva",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "superintendent2@b.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent3@b.example.com",
+            "mobile_number": "(202) 555-0119",
+            "first_name": "Jaime",
+            "last_name": "Brooks",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "superintendent3@b.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent4@b.example.com",
+            "mobile_number": "(202) 555-0120",
+            "first_name": "Stephanie",
+            "last_name": "Warren",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "superintendent4@b.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent5@b.example.com",
+            "mobile_number": "(202) 555-0121",
+            "first_name": "Angela",
+            "last_name": "Sullivan",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "superintendent5@b.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder1@b.example.com",
+            "mobile_number": "(202) 555-0122",
+            "first_name": "Christian",
+            "last_name": "Armstrong",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "builder1@b.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder2@b.example.com",
+            "mobile_number": "(202) 555-0123",
+            "first_name": "Omar",
+            "last_name": "Ball",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "builder2@b.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder3@b.example.com",
+            "mobile_number": "(202) 555-0124",
+            "first_name": "Thomas",
+            "last_name": "Kelley",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "builder3@b.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder4@b.example.com",
+            "mobile_number": "(202) 555-0125",
+            "first_name": "Brandon",
+            "last_name": "Williams",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "builder4@b.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder5@b.example.com",
+            "mobile_number": "(202) 555-0126",
+            "first_name": "Gregory",
+            "last_name": "Harper",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "builder5@b.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "b"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor1@b.example.com",
+            "mobile_number": "(202) 555-0127",
+            "first_name": "Diane",
+            "last_name": "Diaz",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "b",
+            "subcontractor_name": "Diane Diaz Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "subcontractor1@b.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "b",
+            "subcontractor_name": "Diane Diaz Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor2@b.example.com",
+            "mobile_number": "(202) 555-0128",
+            "first_name": "Stephanie",
+            "last_name": "Kelley",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "b",
+            "subcontractor_name": "Stephanie Kelley Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "subcontractor2@b.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "b",
+            "subcontractor_name": "Stephanie Kelley Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor3@b.example.com",
+            "mobile_number": "(202) 555-0129",
+            "first_name": "Sydney",
+            "last_name": "Bonilla",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "b",
+            "subcontractor_name": "Sydney Bonilla Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "subcontractor3@b.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "b",
+            "subcontractor_name": "Sydney Bonilla Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor4@b.example.com",
+            "mobile_number": "(202) 555-0130",
+            "first_name": "Danielle",
+            "last_name": "Fitzgerald",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "b",
+            "subcontractor_name": "Danielle Fitzgerald Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "subcontractor4@b.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "b",
+            "subcontractor_name": "Danielle Fitzgerald Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor5@b.example.com",
+            "mobile_number": "(202) 555-0131",
+            "first_name": "Carol",
+            "last_name": "Rogers",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "b",
+            "subcontractor_name": "Carol Rogers Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Beta Crew"
+            ],
+            "user": [
+                "subcontractor5@b.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "b",
+            "subcontractor_name": "Carol Rogers Services"
+        }
+    },
+    {
+        "model": "construction.company",
+        "fields": {
+            "name": "Construction Inc.",
+            "type": 1
+        },
+        "extra": {
+            "set": "c"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "admin1@c.example.com",
+            "mobile_number": "(202) 555-0132",
+            "first_name": "Kirk",
+            "last_name": "Miller",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "admin",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "admin1@c.example.com"
+            ],
+            "is_admin": true,
+            "is_builder": true
+        },
+        "extra": {
+            "type": "admin",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent1@c.example.com",
+            "mobile_number": "(202) 555-0133",
+            "first_name": "Michael",
+            "last_name": "Johnson",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "superintendent1@c.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent2@c.example.com",
+            "mobile_number": "(202) 555-0134",
+            "first_name": "Jamie",
+            "last_name": "Mejia",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "superintendent2@c.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent3@c.example.com",
+            "mobile_number": "(202) 555-0135",
+            "first_name": "Benjamin",
+            "last_name": "Hartman",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "superintendent3@c.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent4@c.example.com",
+            "mobile_number": "(202) 555-0136",
+            "first_name": "Tracy",
+            "last_name": "Wilson",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "superintendent4@c.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent5@c.example.com",
+            "mobile_number": "(202) 555-0137",
+            "first_name": "Michael",
+            "last_name": "Chen",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "superintendent5@c.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder1@c.example.com",
+            "mobile_number": "(202) 555-0138",
+            "first_name": "Paul",
+            "last_name": "Smith",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "builder1@c.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder2@c.example.com",
+            "mobile_number": "(202) 555-0139",
+            "first_name": "April",
+            "last_name": "Mayer",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "builder2@c.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder3@c.example.com",
+            "mobile_number": "(202) 555-0140",
+            "first_name": "Susan",
+            "last_name": "Reed",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "builder3@c.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder4@c.example.com",
+            "mobile_number": "(202) 555-0141",
+            "first_name": "Scott",
+            "last_name": "Curtis",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "builder4@c.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder5@c.example.com",
+            "mobile_number": "(202) 555-0142",
+            "first_name": "Richard",
+            "last_name": "Reed",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "builder5@c.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "c"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor1@c.example.com",
+            "mobile_number": "(202) 555-0143",
+            "first_name": "Kevin",
+            "last_name": "Spencer",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "c",
+            "subcontractor_name": "Kevin Spencer Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "subcontractor1@c.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "c",
+            "subcontractor_name": "Kevin Spencer Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor2@c.example.com",
+            "mobile_number": "(202) 555-0144",
+            "first_name": "Andrew",
+            "last_name": "Miller",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "c",
+            "subcontractor_name": "Andrew Miller Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "subcontractor2@c.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "c",
+            "subcontractor_name": "Andrew Miller Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor3@c.example.com",
+            "mobile_number": "(202) 555-0145",
+            "first_name": "John",
+            "last_name": "Dunn",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "c",
+            "subcontractor_name": "John Dunn Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "subcontractor3@c.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "c",
+            "subcontractor_name": "John Dunn Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor4@c.example.com",
+            "mobile_number": "(202) 555-0146",
+            "first_name": "Dylan",
+            "last_name": "Ramirez",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "c",
+            "subcontractor_name": "Dylan Ramirez Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "subcontractor4@c.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "c",
+            "subcontractor_name": "Dylan Ramirez Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor5@c.example.com",
+            "mobile_number": "(202) 555-0147",
+            "first_name": "Victoria",
+            "last_name": "Martinez",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "c",
+            "subcontractor_name": "Victoria Martinez Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Construction Inc."
+            ],
+            "user": [
+                "subcontractor5@c.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "c",
+            "subcontractor_name": "Victoria Martinez Services"
+        }
+    },
+    {
+        "model": "construction.company",
+        "fields": {
+            "name": "Daily Work",
+            "type": 1
+        },
+        "extra": {
+            "set": "d"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "admin1@d.example.com",
+            "mobile_number": "(202) 555-0148",
+            "first_name": "Elizabeth",
+            "last_name": "Cowan",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "admin",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "admin1@d.example.com"
+            ],
+            "is_admin": true,
+            "is_builder": true
+        },
+        "extra": {
+            "type": "admin",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent1@d.example.com",
+            "mobile_number": "(202) 555-0149",
+            "first_name": "Jeffrey",
+            "last_name": "Turner",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "superintendent1@d.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent2@d.example.com",
+            "mobile_number": "(202) 555-0150",
+            "first_name": "Austin",
+            "last_name": "Armstrong",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "superintendent2@d.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent3@d.example.com",
+            "mobile_number": "(202) 555-0151",
+            "first_name": "Adrian",
+            "last_name": "Miller",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "superintendent3@d.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent4@d.example.com",
+            "mobile_number": "(202) 555-0152",
+            "first_name": "Daniel",
+            "last_name": "Lee",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "superintendent4@d.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent5@d.example.com",
+            "mobile_number": "(202) 555-0153",
+            "first_name": "Anthony",
+            "last_name": "Jones",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "superintendent5@d.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder1@d.example.com",
+            "mobile_number": "(202) 555-0154",
+            "first_name": "Lindsay",
+            "last_name": "Wright",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "builder1@d.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder2@d.example.com",
+            "mobile_number": "(202) 555-0155",
+            "first_name": "Wanda",
+            "last_name": "Mahoney",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "builder2@d.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder3@d.example.com",
+            "mobile_number": "(202) 555-0156",
+            "first_name": "Katherine",
+            "last_name": "Landry",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "builder3@d.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder4@d.example.com",
+            "mobile_number": "(202) 555-0157",
+            "first_name": "Natasha",
+            "last_name": "Crosby",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "builder4@d.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder5@d.example.com",
+            "mobile_number": "(202) 555-0158",
+            "first_name": "Julie",
+            "last_name": "Allen",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "builder5@d.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "d"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor1@d.example.com",
+            "mobile_number": "(202) 555-0159",
+            "first_name": "Megan",
+            "last_name": "Smith",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "d",
+            "subcontractor_name": "Megan Smith Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "subcontractor1@d.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "d",
+            "subcontractor_name": "Megan Smith Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor2@d.example.com",
+            "mobile_number": "(202) 555-0160",
+            "first_name": "Danielle",
+            "last_name": "Rodgers",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "d",
+            "subcontractor_name": "Danielle Rodgers Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "subcontractor2@d.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "d",
+            "subcontractor_name": "Danielle Rodgers Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor3@d.example.com",
+            "mobile_number": "(202) 555-0161",
+            "first_name": "Jeremy",
+            "last_name": "Strickland",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "d",
+            "subcontractor_name": "Jeremy Strickland Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "subcontractor3@d.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "d",
+            "subcontractor_name": "Jeremy Strickland Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor4@d.example.com",
+            "mobile_number": "(202) 555-0162",
+            "first_name": "Anne",
+            "last_name": "Willis",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "d",
+            "subcontractor_name": "Anne Willis Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "subcontractor4@d.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "d",
+            "subcontractor_name": "Anne Willis Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor5@d.example.com",
+            "mobile_number": "(202) 555-0163",
+            "first_name": "Sharon",
+            "last_name": "Ramos",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "d",
+            "subcontractor_name": "Sharon Ramos Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Daily Work"
+            ],
+            "user": [
+                "subcontractor5@d.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "d",
+            "subcontractor_name": "Sharon Ramos Services"
+        }
+    },
+    {
+        "model": "construction.company",
+        "fields": {
+            "name": "Excellent Constructors",
+            "type": 1
+        },
+        "extra": {
+            "set": "e"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "admin1@e.example.com",
+            "mobile_number": "(202) 555-0164",
+            "first_name": "Diane",
+            "last_name": "Gonzales",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "admin",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "admin1@e.example.com"
+            ],
+            "is_admin": true,
+            "is_builder": true
+        },
+        "extra": {
+            "type": "admin",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent1@e.example.com",
+            "mobile_number": "(202) 555-0165",
+            "first_name": "Victor",
+            "last_name": "Carrillo",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "superintendent1@e.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent2@e.example.com",
+            "mobile_number": "(202) 555-0166",
+            "first_name": "Gabriel",
+            "last_name": "Ortiz",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "superintendent2@e.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent3@e.example.com",
+            "mobile_number": "(202) 555-0167",
+            "first_name": "Jason",
+            "last_name": "Moore",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "superintendent3@e.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent4@e.example.com",
+            "mobile_number": "(202) 555-0168",
+            "first_name": "Scott",
+            "last_name": "Powell",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "superintendent4@e.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "superintendent5@e.example.com",
+            "mobile_number": "(202) 555-0169",
+            "first_name": "Renee",
+            "last_name": "Oconnell",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "superintendent5@e.example.com"
+            ],
+            "is_superintendent": true
+        },
+        "extra": {
+            "type": "superintendent",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder1@e.example.com",
+            "mobile_number": "(202) 555-0170",
+            "first_name": "Amanda",
+            "last_name": "Garcia",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "builder1@e.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder2@e.example.com",
+            "mobile_number": "(202) 555-0171",
+            "first_name": "Roger",
+            "last_name": "Glover",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "builder2@e.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder3@e.example.com",
+            "mobile_number": "(202) 555-0172",
+            "first_name": "Jason",
+            "last_name": "Roberts",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "builder3@e.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder4@e.example.com",
+            "mobile_number": "(202) 555-0173",
+            "first_name": "Laura",
+            "last_name": "Little",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "builder4@e.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "builder5@e.example.com",
+            "mobile_number": "(202) 555-0174",
+            "first_name": "Ryan",
+            "last_name": "Greene",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "builder5@e.example.com"
+            ],
+            "is_builder": true
+        },
+        "extra": {
+            "type": "builder",
+            "password": "crewpass",
+            "set": "e"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor1@e.example.com",
+            "mobile_number": "(202) 555-0175",
+            "first_name": "Randall",
+            "last_name": "Olsen",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "e",
+            "subcontractor_name": "Randall Olsen Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "subcontractor1@e.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "e",
+            "subcontractor_name": "Randall Olsen Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor2@e.example.com",
+            "mobile_number": "(202) 555-0176",
+            "first_name": "Joel",
+            "last_name": "Wright",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "e",
+            "subcontractor_name": "Joel Wright Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "subcontractor2@e.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "e",
+            "subcontractor_name": "Joel Wright Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor3@e.example.com",
+            "mobile_number": "(202) 555-0177",
+            "first_name": "Keith",
+            "last_name": "Taylor",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "e",
+            "subcontractor_name": "Keith Taylor Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "subcontractor3@e.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "e",
+            "subcontractor_name": "Keith Taylor Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor4@e.example.com",
+            "mobile_number": "(202) 555-0178",
+            "first_name": "Matthew",
+            "last_name": "Gonzalez",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "e",
+            "subcontractor_name": "Matthew Gonzalez Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "subcontractor4@e.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "e",
+            "subcontractor_name": "Matthew Gonzalez Services"
+        }
+    },
+    {
+        "model": "account.user",
+        "fields": {
+            "email": "subcontractor5@e.example.com",
+            "mobile_number": "(202) 555-0179",
+            "first_name": "Brian",
+            "last_name": "Olson",
+            "password": "pbkdf2_sha256$36000$VXjZF9fzQxhs$0SnEvagCYY9z1nhB/n004HRndEkvrg2wvdhDRI7/+dk=",
+            "enable_text_notifications": true,
+            "enable_email_notifications": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "e",
+            "subcontractor_name": "Brian Olson Services"
+        }
+    },
+    {
+        "model": "construction.companyrole",
+        "fields": {
+            "company": [
+                "Excellent Constructors"
+            ],
+            "user": [
+                "subcontractor5@e.example.com"
+            ],
+            "is_crew_leader": true
+        },
+        "extra": {
+            "type": "subcontractor",
+            "password": "crewpass",
+            "set": "e",
+            "subcontractor_name": "Brian Olson Services"
+        }
+    }
+]

@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Script to load all environment variables while running in the bitbucket
+# pipeline
+# 
+set -a
+source bitbucket_pipeline/bitbucket_pipeline.env
+set +a
+
+[ ! -z "$1" ] && echo "Using the following env variables:" && env|sort
+true

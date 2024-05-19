@@ -1,0 +1,45 @@
+<html lang="en"><!--<![endif]--><!-- BEGIN HEAD --><head>
+    <meta charset="utf-8">
+    <title>Crew Boss</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="/dist/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/dist/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/dist/assets/css/hamburgers.min.css" rel="stylesheet" type="text/css">
+    <link href="/dist/assets/css/custom.css" rel="stylesheet" type="text/css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <link rel="shortcut icon" href="/dist/assets/images/favicon.png">
+  </head>
+  <!-- END HEAD -->
+  <body class="login-backdrop">
+    <main class="scroll-container">
+      <div class="login-container">
+        <section class="login">
+          {% if error %}<div class="alert alert-danger">{{ error }}</div>{% endif %}
+          {% if message %}<div class="alert alert-success">{{ message }}</div>{% endif %}
+          <img src="/dist/assets/images/login-logo.png" alt="Logo" class="login-logo">
+
+          {% block content %}{% endblock %}
+        </section>
+      </div>
+
+      <footer class="container login-footer">
+        <p class="copy text-center">Copyright © 2019 <a target="_blank" href="https://crewbossconnect.com/">crewbossconnect.com</a> - All Rights Reserved</p>
+        <ul class="attribution-list">
+          <li>
+            <a target="_blank" href="https://crewbossconnect.com/terms-of-use/" class="login-ul--a">Terms of Use</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://crewbossconnect.com/privacy-policy/" class="login-ul--a">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="mailto:gary@crewbossconnect.com" class="login-ul--a">Contact</a>
+          </li>
+        </ul>
+      </footer>
+    </main>
+
+    <script src="/dist/assets/plugins/jquery.min.js" type="text/javascript"></script>
+  </body>
+</html>

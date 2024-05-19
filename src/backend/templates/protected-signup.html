@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if success %}
+{% if done %}
+<article style="display:table; width:100%;">
+  <a href="/" style="display:table-cell;" class="btn btn-primary login-btn text-uppercase">Log in to CrewBoss</a>
+</article>
+{% else %}
+<article class="forgot-password-section">
+  <p class="text-center">You've been invited to the CrewBoss Network</p>
+  <p class="text-center">Please make sure your name is correct. You must specify a password to continue.</p>
+  <ul class="login-list">
+    {% if role.is_admin %}<li class="list-header">Company Admin</li>{% endif %}
+    {% if role.is_builder %}<li class="list-header">Builder</li>{% endif %}
+    {% if role.is_crew_leader %}<li class="list-header">Subcontractor</li>{% endif %}
+    {% if role.is_superintendent %}<li class="list-header">Crew / Flex</li>{% endif %}
+    {% if role.is_contact %}<li class="list-header">Contact</li>{% endif %}
+    <li class="list-breaker">{{ user.email }}</li>
+    <li>{{ user.mobile_number_display }}</li>
+  </ul>
+  <form method="POST">
+    {% csrf_token %}
+    <div>
+      <input type="first_name" required="required" class="login-input" name="first_name" value="{{ user.first_name }}"  placeholder="First name"/>
+    </div>
+    <div>
+      <input type="last_name" required="required" class="login-input" name="last_name" value="{{ user.last_name }}"  placeholder="Last name"/>
+    </div>
+    <div>
+      <input type="password" required="required" class="login-input" name="password" placeholder="New password" />
+    </div>
+    <div>
+      <input type="password" required="required" class="login-input" name="password_confirm" placeholder="Confirm password" />
+    </div>
+
+    <button class="text-uppercase btn login-btn">OK</button>
+  </form>
+</article>
+{% endif %}
+{% endif %}
+{% endblock %}

@@ -1,0 +1,30 @@
+image: python:3.6
+
+clone:
+  depth: 5
+  
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - pip
+        script:
+          - cd src/backend
+          - pip install -r requirements.txt
+          - source bitbucket_pipeline/load_env show_vars
+          - ./manage.py makemigrations account cbcommon construction
+          - ./manage.py migrate
+          - ./manage.py seed_app
+          - ./manage.py test
+        services:
+          - db
+          - redis
+definitions:
+  services:
+    redis:
+      image: "redis:4.0-alpine"
+      memory: 512
+    db:
+      image: postgres
+    

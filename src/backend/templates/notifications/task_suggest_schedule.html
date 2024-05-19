@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style media="screen">
+  .accept {
+    background-color:#89c403;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #74b807;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #528009;
+  }
+  .accept:hover {
+    background-color:#77a809;
+  }
+  .accept:active {
+    position:relative;
+    top:1px;
+  }
+
+  .reject {
+    background-color:#c62d1f;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+  }
+  .reject:hover {
+    background-color:#f24437;
+  }
+  .reject:active {
+    position:relative;
+    top:1px;
+  }
+
+  .review {
+    background-color:#ffec64;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+  }
+  .review:hover {
+    background-color:#ffab23;
+  }
+  .review:active {
+    position:relative;
+    top:1px;
+  }
+  .selected {
+    -moz-box-shadow: 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow: 0px 1px 0px 0px #ffffff;
+    box-shadow: 0px 1px 0px 0px #ffffff;
+    background-color:#ededed;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#777777;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+  }
+
+  </style>
+</head>
+<body style="margin: 0; padding: 0;">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td style="padding: 10px 0 30px 0;">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border: 1px solid #5499c7; border-collapse: collapse;">
+          <tr>
+            <td align="center" bgcolor="#5499c7" style="padding: 40px 0 30px 0; color: #153643; font-size: 28px; font-weight: bold; font-family: Arial, sans-serif;">
+              <img src="https://crewboss.app/dist/assets/images/header-logo.png" alt="CrewBoss" width="502" height="113.406" style="display: block;" />
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#ffffff" style="padding: 20px 30px 0px 30px;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td style="color: #333; font-family: Arial, sans-serif; font-size: 24px;">
+                    <b>Greetings from CrewBoss, {{ token.user.first_name }}!
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="color: #333; font-family: Arial, sans-serif; font-size: 24px; padding-top: 20px;">
+                      <b><span style="color: #5499c7;">{{ extra_context.suggester_role }}: {{ extra_context.suggestion.participation.user }}</span>
+                        suggested a new schedule for your task <span style="color: #F8B60B;">{{ token.participation.task.name}}</span></b>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#ffffff" style="padding: 10px 30px 20px 30px;">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td style="padding: 10px 0 10px 0; color: #153643; font-family: Arial, sans-serif; font-size: 18px; line-height: 20px;" width="30%">
+                        <b>JOB:</b>
+                      </td>
+                      <td style="padding: 10px 0 10px 0; color: #153643; font-family: Arial, sans-serif; font-size: 18px; line-height: 20px;">
+                        {{ token.participation.task.job }}
+                      </td>
+                    </tr>
+                    {% if token.participation.task.category != None %}
+                    <tr>
+                      <td style="padding: 10px 0 10px 0; color: #153643; font-family: Arial, sans-serif; font-size: 18px; line-height: 20px;" width="30%">
+                        <b>CATEGORY:</b>
+                      </td>
+                      <td style="padding: 10px 0 10px 0; color: #153643; font-family: Arial, sans-serif; font-size: 18px; line-height: 20px;">
+                        {{ token.participation.task.category }}{% if token.participation.task.subcategory != None %} / {{ token.participation.task.subcategory }}{% endif %}
+                      </td>
+                    </tr>
+                    {% endif %}
+                    <tr>
+                      <td style="padding: 10px 0 10px 0; color: #153643; font-family: Arial, sans-serif; font-size: 18px; line-height: 20px;" width="30%">
+                        <b>START TIME:</b>
+                      </td>
+                      <td style="padding: 10px 0 10px 0; color: #153643; font-family: Arial, sans-serif; font-size: 18px; line-height: 20px;">
+                        {{ token.participation.task.start_time|date:"H:i"|default:"" }}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px 0 10px 0; color: #153643; font-family: Arial, sans-serif; font-size: 18px; line-height: 20px;" width="30%">
+                        <b>END TIME:</b>
+                      </td>
+                      <td style="padding: 10px 0 10px 0; color: #153643; font-family: Arial, sans-serif; font-size: 18px; line-height: 20px;">
+                        {{ token.participation.task.end_time|date:"H:i"|default:"" }}
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="2" style="padding: 10px 0 10px 0; color: #5499c7; font-family: Arial, sans-serif; font-size: 22px; line-height: 20px; padding-top: 30px;">
+                        <b>Original Schedule</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px 0 10px 0; color: #153643; font-family: Arial, sans-serif; font-size: 18px; line-height: 20px;" width="30%">
+                        <b>DATES:</b>
+                      </td>
+                      <td style="padding: 10px 0 10px 0; color: #153643; font-family: Arial, sans-serif; font-size: 18px; line-height: 20px;">
+                        {{ token.participation.task.start_date|date:"m/d/Y"|default:"" }} - {{ token.participation.task.end_date|date:"m/d/Y"|default:"" }}
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="2" style="padding: 10px 0 10px 0; color: #F8B60B; font-family: Arial, sans-serif; font-size: 22px; line-height: 20px; padding-top: 30px;">
+                        <b>Suggested Schedule</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 10px 0 10px 0; color: #153643; font-family: Arial, sans-serif; font-size: 18px; line-height: 20px;" width="30%">
+                        <b>DATES:</b>
+                      </td>
+                      <td style="padding: 10px 0 10px 0; color: #153643; font-family: Arial, sans-serif; font-size: 18px; line-height: 20px;">
+                        {{ extra_context.suggestion.start_date|date:"m/d/Y"|default:"" }} - {{ extra_context.suggestion.end_date|date:"m/d/Y"|default:"" }}
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#5499c7" style="padding: 30px 30px 30px 30px;">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td colspan="3" style="color: #ffffff; font-family: Arial, sans-serif; font-size: 14px; padding-bottom: 10px;" width="20%">
+                        <a href="{{ SITE_URL }}api/v1/task/accept-suggestion/?token={{ token.token }}&sid={{ extra_context.suggestion.id }}" class="{% if token.participation.response == token.participation.RESPONSE_ACCEPTED %} selected {% else %} accept {% endif %}">Accept</a>
+                        <a href="{{ SITE_URL }}api/v1/task/reject-suggestion/?token={{ token.token }}&sid={{ extra_context.suggestion.id }}" class="{% if token.participation.response == token.participation.RESPONSE_REJECTED %} selected {% else %} reject {% endif %}">Reject</a>
+                        <a href="{{ SITE_URL }}api/v1/task/review-suggestion/?token={{ token.token }}&sid={{ extra_context.suggestion.id }}" class="review">Review</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </body>
+    </html>

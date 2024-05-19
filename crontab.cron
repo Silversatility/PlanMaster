@@ -1,0 +1,2 @@
+# 0 10 * * * cd /home/ubuntu/crewboss_web/ && make backup
+0 * * * * cd /home/ubuntu/crewboss_web/src/backend/ && source /home/ubuntu/.virtualenvs/crewboss/bin/activate && /home/ubuntu/.virtualenvs/crewboss/bin/python manage.py send_task_reminders

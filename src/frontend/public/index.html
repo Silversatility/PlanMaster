@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+  <!--<![endif]-->
+  <!-- BEGIN HEAD -->
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Crew Boss</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+      name="viewport"
+    />
+    <meta name="theme-color" content="#5499c7" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5499c7" />
+    <meta name="apple-mobile-web-app-title" content="CrewBoss" />
+    <link
+      rel="apple-touch-icon"
+      href="/dist/img/icons/apple-touch-icon-152x152.png"
+    />
+    <link rel="manifest" href="/dist/manifest.json" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link
+      href="/dist/assets/plugins/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/dist/assets/plugins/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/dist/assets/css/hamburgers.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/dist/assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <link rel="shortcut icon" href="/dist/assets/images/favicon.png" />
+    <link
+      rel="shortcut icon"
+      href="/dist/img/icons/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: `${process.env.VUE_APP_ONESIGNAL}`
+        });
+      });
+    </script>
+    <script>
+      window.intercomSettings = {
+        app_id: "i5kbnkbq"
+      };
+    </script>
+    <script>(function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', w.intercomSettings); } else { var d = document; var i = function () { i.c(arguments); }; i.q = []; i.c = function (args) { i.q.push(args); }; w.Intercom = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/i5kbnkbq'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })();</script>
+  </head>
+  <!-- END HEAD -->
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but CrewBoss doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+    <script src="/dist/assets/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+
+  </body>
+</html>

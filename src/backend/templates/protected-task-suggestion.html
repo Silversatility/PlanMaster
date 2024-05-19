@@ -1,0 +1,201 @@
+{% extends "protected-base.html" %}
+{% load static %}
+
+{% block content %}
+{% if review %}
+<article class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="alert alert-info">
+        <h1 class="page-title bold">
+          Please review the suggestion and Accept/Reject accordingly.
+        </h1>
+        <a href="{% url 'task-accept-suggestion' %}?token={{ request.GET.token }}&sid={{ request.GET.sid }}" class="btn btn-lg btn-primary">Accept</a>
+        <a href="{% url 'task-reject-suggestion' %}?token={{ request.GET.token }}&sid={{ request.GET.sid }}" class="btn btn-lg btn-danger">Reject</a>
+    </div>
+  </div>
+</article>
+{% endif %}
+
+<main class="container-fluid main-fluid add-job-fluid">
+  <div class="container">
+    {% if success %}
+    <article class="row top-form-article">
+      <div class="col-xs-12 col-md-4">
+        <p class="task-details-p">
+          <span class="task-details-label bold w-auto block">Task Details:</span>
+          <span class="task-details-value block">#{{ participation.task.id|default:"" }} {{ participation.task.get_status_display|default:"" }}</span>
+          <span class="task-details-value block">{{ participation.task.name|default:"" }}</span>
+        </p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="btn-group">
+          <button
+            {% if participation.task.key_participants.builder.response == participation.RESPONSE_ACCEPTED %}
+            class="btn btn-primary h-auto b-r-4 accepted-bg"
+            {% elif participation.task.key_participants.builder.response == participation.RESPONSE_REJECTED %}
+            class="btn btn-primary h-auto b-r-4 rejected-bg"
+            {% elif participation.task.key_participants.builder.response == participation.RESPONSE_PENDING %}
+            class="btn btn-primary h-auto b-r-4 pending-bg"
+            {% else %}
+            class="btn btn-primary h-auto b-r-4 not-applicable-bg"
+            {% endif %}
+            type="button">
+              B
+          </button>
+        </div>
+        <div class="btn-group">
+          <button
+            {% if participation.task.key_participants.subcontractor.response == participation.RESPONSE_ACCEPTED %}
+            class="btn btn-primary h-auto b-r-4 accepted-bg"
+            {% elif participation.task.key_participants.subcontractor.response == participation.RESPONSE_REJECTED %}
+            class="btn btn-primary h-auto b-r-4 rejected-bg"
+            {% elif participation.task.key_participants.subcontractor.response == participation.RESPONSE_PENDING %}
+            class="btn btn-primary h-auto b-r-4 pending-bg"
+            {% else %}
+            class="btn btn-primary h-auto b-r-4 not-applicable-bg"
+            {% endif %}
+            type="button">
+              SC
+          </button>
+        </div>
+        <div class="btn-group">
+          <button
+            {% if participation.task.key_participants.superintendent.response == participation.RESPONSE_ACCEPTED %}
+            class="btn btn-primary h-auto b-r-4 accepted-bg"
+            {% elif participation.task.key_participants.superintendent.response == participation.RESPONSE_REJECTED %}
+            class="btn btn-primary h-auto b-r-4 rejected-bg"
+            {% elif participation.task.key_participants.superintendent.response == participation.RESPONSE_PENDING %}
+            class="btn btn-primary h-auto b-r-4 pending-bg"
+            {% else %}
+            class="btn btn-primary h-auto b-r-4 not-applicable-bg"
+            {% endif %}
+            type="button">
+              CR
+          </button>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div>
+          <span class="task-details-date-label bold">Start date (Current):</span>
+          <span class="task-details-value">{{ participation.task.start_date|date:"m/d/Y"|default:"" }}</span>
+        </div>
+        <div>
+          <span class="task-details-date-label bold">End date (Current):</span>
+          <span class="task-details-value">{{ participation.task.end_date|date:"m/d/Y"|default:"" }}</span>
+        </div>
+        <div><span class="task-details-value">{{ participation.task.start_time|date:"H:i"|default:"" }}</span> -- <span class="task-details-value">{{ participation.task.end_time|date:"H:i"|default:"" }}</span></div>
+      </div>
+    </article>
+    <article class="row">
+      <div class="col-xs-12 col-md-4">
+        <p class="task-details-p">
+          <span class="task-details-label bold w-auto block">Task Category:</span>
+          <span class="task-details-value block">{{ participation.task.category|default:"" }}</span>
+          <span class="task-details-value block">{{ participation.task.subcategory|default:"" }}</span>
+        </p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <p class="task-details-p">
+          <span class="task-details-label bold w-auto block">Location:</span>
+          <span class="task-details-value w-auto block">
+            {{ participation.task.job.subdivision_name|default:"" }}
+            <span class="pull-right">#{{ participation.task.job.lot_number|default:"" }}</span>
+          </span>
+          <span class="task-details-value w-auto block">
+            {{ participation.task.job.street_address|default:"" }}<br />
+            {{ participation.task.job.city|default:"" }} {{ participation.task.job.state|default:"" }} {{ participation.task.job.zip|default:"" }}
+          </span>
+        </p>
+      </div>
+    </article>
+
+    <article class="panel panel-warning row">
+      <div class="col-xs-12 col-md-4">
+        <h2>
+          <span class="task-details-date-label bold">Suggested start date:</span>
+          <span class="task-details-value">{{ suggestion.start_date|date:"m/d/Y"|default:"" }}</span>
+        </h2>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h2>
+          <span class="task-details-date-label bold">Suggested end date:</span>
+          <span class="task-details-value">{{ suggestion.end_date|date:"m/d/Y"|default:"" }}</span>
+        </h2>
+      </div>
+      <hr class="col-xs-12" />
+      <div class="col-xs-12 col-md-4">
+        <p class="task-details-p">
+          <span class="task-details-label bold w-auto block">
+            Builder
+            {% if suggestion.responses.suggester == "builder" %} (Suggester):
+            {% elif suggestion.responses.builder.response == 1 %} (Pending):
+            {% elif suggestion.responses.builder.response == 2 %} (Accepted):
+            {% elif suggestion.responses.builder.response == 3 %} (Rejected):
+            {% endif %}
+          </span>
+          <span class="task-details-value block">
+            {{ participation.task.builder.user|default:"" }} <br />
+            {{ participation.task.builder.company|default:"" }}
+          </span>
+        </p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <p class="task-details-p">
+          <span class="task-details-label bold w-auto block">
+            Subcontractor
+            {% if suggestion.responses.suggester == "subcontractor" %} (Suggester):
+            {% elif suggestion.responses.subcontractor.response == 1 %} (Pending):
+            {% elif suggestion.responses.subcontractor.response == 2 %} (Accepted):
+            {% elif suggestion.responses.subcontractor.response == 3 %} (Rejected):
+            {% endif %}
+          </span>
+          <span class="task-details-value">
+            {{ participation.task.subcontractor.user|default:"" }} <br />
+            {{ participation.task.subcontractor.company|default:"" }}
+          </span>
+        </p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <p class="task-details-p">
+          <span class="task-details-label bold w-auto block">
+            Crew / Flex
+            {% if suggestion.responses.suggester == "superintendent" %} (Suggester):
+            {% elif suggestion.responses.superintendent.response == 1 %} (Pending):
+            {% elif suggestion.responses.superintendent.response == 2 %} (Accepted):
+            {% elif suggestion.responses.superintendent.response == 3 %} (Rejected):
+            {% endif %}
+          </span>
+          <span class="task-details-value">
+            {{ participation.task.superintendent.user|default:"" }} <br />
+            {{ participation.task.superintendent.company|default:"" }}
+          </span>
+        </p>
+      </div>
+    </article>
+    <div class="table-responsive">
+      <table class="table table-bordered add-job-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Author</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for note in participation.task.all_notes %}
+          <tr>
+            <td>{{ note.created_timestamp|date:"m/d/Y H:i:s"|default:"" }}</td>
+            <td>{{ note.type }}</td>
+            <td>{{ note.author|default:"" }}</td>
+            <td>{{ note.text|default:"" }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+  </div>
+</main>
+{% endblock %}

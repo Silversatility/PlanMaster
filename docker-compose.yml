@@ -1,0 +1,45 @@
+version: '2'
+
+services:
+  db:
+    image: postgres:11.5
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+
+  web:
+    build: .
+    command: "./django_server_bootstrap.sh"
+    volumes:
+      - .:/code
+    ports:
+      - "9090:9000"
+      - "9091:9001"
+    depends_on:
+      - db
+      - redis
+      - mail
+    links:
+      - db:db
+      - redis:redis
+      - mail:mail
+    stdin_open: true
+    tty: true
+
+  redis:
+    image: "redis:4.0-alpine"
+    command: "redis-server --stop-writes-on-bgsave-error no"
+    ports:
+      - "6380:6379"
+
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    command: "bash -c './node_bootstrap.sh watch_prod'"
+    volumes:
+      - .:/code
+
+  mail:
+    image: "tophfr/mailcatcher"
+    ports:
+      - "9095:80"

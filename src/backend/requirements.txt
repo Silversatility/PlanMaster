@@ -1,0 +1,111 @@
+Django==1.11.14
+psycopg2-binary==2.7.5
+pytz==2018.5
+
+Pillow==5.2.0
+
+# Environment variables
+django-environ==0.4.4
+
+# Debugging tools
+ipython==6.4.0
+ipdb==0.11
+tblib==1.3.2  # required for tracebacks pickling on parallel tests
+
+# Coding standards
+flake8==3.5.0
+mccabe==0.6.1
+pycodestyle==2.3.1
+pyflakes==1.6.0
+coverage==4.5.1
+
+# DRF and dependecies
+django-filter==1.1.0
+djangorestframework==3.8.2
+Markdown==2.6.11
+pygments==2.2.0
+coreapi==2.3.3
+
+# US Local Fields
+django-localflavor==2.0
+
+# Amazon services
+boto3==1.7.50
+django-ses==0.8.5
+django-storages==1.6.6
+
+# Sending email
+sparkpost==1.3.6
+
+# Integration with third party services
+requests==2.19.1
+
+# Faking data for testing
+Faker==1.0.2
+model_mommy==1.6.0
+django-seed==0.1.9
+
+# Sorted M2M field
+django-sortedm2m==1.5.0
+
+# Django channels (websocket)
+channels==2.3.1
+daphne==2.4.1
+asgiref==3.2.3
+
+ # Redis (channels dependency)
+channels_redis==2.4.1
+redis==2.10.6
+
+#Permissions on per-object basis
+django-guardian==1.4.9  # with need for database
+rules==1.3  # without need for database
+
+# Testing tools
+django-nose==1.4.5
+nose==1.3.7
+nose-timer==0.7.2
+freezegun==0.3.10
+
+# Report Builder
+django-report-builder==6.0.2
+
+# Sentry
+raven==6.9.0
+
+# Useful extensions and graph library
+django-extensions==2.0.7
+pygraphviz==1.3.1
+
+# WSGI server
+#disabled due to not being compatible with bitbucket_pipelines
+#bjoern==2.2.1
+
+# Allow admin to login as candidate
+django-loginas==0.3.6
+
+# Health check
+django-health-check==3.6.1
+psutil==5.4.6
+
+# Phone Numbers
+django-phonenumber-field==2.0.0
+
+# Twilio
+twilio==6.16.0
+
+# For timeouts
+billiard==3.5.0.4
+
+stripe==2.21.0
+
+# For audit logs
+django-reversion==3.0.4
+sentry-sdk==0.14.0
+
+# For google translate
+google-cloud==0.34.0
+google-cloud-translate==1.6.0
+
+# GeoIP
+maxminddb-geolite2==2018.703

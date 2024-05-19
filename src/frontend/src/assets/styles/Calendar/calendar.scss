@@ -1,0 +1,113 @@
+@import "@/assets/styles/helpers.scss";
+
+.calendar {
+    .mobile-sub-header {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+  .calendar {
+    .cf-search {
+      width: 70%;
+    }
+
+    .main-fluid {
+      display: none !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar {
+    .mobile {
+      display: inherit;
+    }
+
+    .mobile-sub-header {
+      display: block;
+    }
+
+    .cf-search {
+      width: 90%;
+    }
+    .filter-by,
+    .date-wrapper,
+    .cf-btn,
+    .cf-search-div,
+    .main-fluid,
+    .title-section {
+      display: none !important;
+    }
+
+    .tasks {
+      padding-top: 0;
+
+      .tasks-wrapper {
+        max-height: 217px;
+        overflow-y: scroll;
+        padding-right: 5px;
+      }
+
+      .handleHeight {
+        max-height: 800px;
+      }
+
+      .status {
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
+      .show-more {
+        color: #5599c8;
+      }
+
+      .bottom-blur {
+        &:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background: rgba(240, 240, 240, 0.5);
+          height: 69px;
+          box-shadow: inset -8px -18px 20px 0px rgba(255, 255, 255, 1);
+        }
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-button {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #5599c8;
+        border: 0px none #5599c8;
+        border-radius: 100px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #5599ff;
+      }
+      ::-webkit-scrollbar-thumb:active {
+        background: #5599c8;
+      }
+      ::-webkit-scrollbar-track {
+        background: #e3e9f5;
+        border: 0px none #ffffff;
+        border-radius: 50px;
+      }
+      ::-webkit-scrollbar-track:hover {
+        background: #e3e9f5;
+      }
+      ::-webkit-scrollbar-track:active {
+        background: #e3e9f5;
+      }
+      ::-webkit-scrollbar-corner {
+        background: transparent;
+      }
+    }
+  }
+}
